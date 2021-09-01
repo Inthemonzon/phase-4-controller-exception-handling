@@ -50,7 +50,7 @@ class BirdsController < ApplicationController
     params.permit(:name, :species, :likes)
   end
 
-  private
+  # private
 
   def render_not_found_response
     render json: { error: "Bird not found" }, :not_found
